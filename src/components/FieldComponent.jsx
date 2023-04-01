@@ -70,6 +70,7 @@ const FieldComponent = ({ parentId, onRemove, handleDeleteField, index }) => {
             }}
             onBlur={handleSave}
             autoFocus // Add autoFocus attribute
+            maxLength={30} // Add maxLength attribute
           />
         </>
       ) : (
