@@ -17,7 +17,9 @@ const FieldComponent = ({ parentId, onRemove, handleDeleteField, index }) => {
   // Handle changes to fieldType dropdown
   const handleFieldTypeChange = (event) => {
     setFieldType(event.target.value);
-     if (fieldType == "object") {
+     // If fieldType is not an object, hide the Add button and remove any nested child components
+    if (event.target.value !== "object") {
+      setShowAddButton(false);
       setFieldComponents([]);
     }
   };
