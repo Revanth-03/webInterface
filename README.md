@@ -2,6 +2,8 @@
 
 This is a web interface built with React that allows users to dynamically build a form by adding and deleting fields with various data types. The application is hosted on firebase and can be accessed at [https://web-interface-292e0.web.app](https://web-interface-292e0.web.app/).
 
+***NOTE** Please use laptop for better experiences
+
 ## Table of Contents
 
 - [Features](#features)
