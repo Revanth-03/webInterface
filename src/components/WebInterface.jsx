@@ -9,7 +9,7 @@ const WebInterface = () => {
 
   // Handler function to add a new field to the list
   const handleAddField = () => {
-    setFields([...fields, {}]);
+    setFields([...fields, <FieldComponent key={fields.length} />]);
   };
 
   // Handler function to delete a field from the list by its index
