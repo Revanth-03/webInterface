@@ -36,7 +36,7 @@ const WebInterface = () => {
       </div>
       {fields.length > 0 ? (
         // Map over the list of fields and render a FieldComponent for each one
-        fields.map((index) => (
+        fields.map((field,index) => (
           <FieldComponent
             key={index}
             index={index}
