@@ -66,6 +66,7 @@ const FieldComponent = ({ parentId, onRemove, handleDeleteField, index }) => {
             onKeyDown={(e) => {
               if (e.key === "Enter") {
                 handleInputChange(e);
+                e.target.blur(); // blur the input field
               }
             }}
             onBlur={handleSave}
