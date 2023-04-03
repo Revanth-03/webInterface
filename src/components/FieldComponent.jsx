@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../styles/FieldComponent.scss";
 
-const FieldComponent = ({ parentId, onRemove, handleDeleteField, index }) => {
+const FieldComponent = ({ parentId, onRemove, handleDeleteField, index ,field}) => {
   // State variables
+  const {name,type,children} = field;
   const [showAddButton, setShowAddButton] = useState(false);
-  const [fieldType, setFieldType] = useState("string");
-  const [fieldComponents, setFieldComponents] = useState([]);
+  const [fieldType, setFieldType] = useState(type||"string");
+  const [fieldComponents, setFieldComponents] = useState(children?children.map((child)=><FieldComponent field{child} />):[]);
   const [isEditMode, setIsEditMode] = useState(false);
-  const [value, setValue] = useState("add name");
+  const [value, setValue] = useState(name||"add name");
 
   // Update showAddButton based on fieldType
   useEffect(() => {
