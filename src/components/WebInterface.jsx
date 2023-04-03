@@ -5,7 +5,22 @@ import "react-toastify/dist/ReactToastify.css";
 
 const WebInterface = () => {
   // State hook to manage the list of fields
-  const [fields, setFields] = useState([]);
+  const [fields, setFields] = useState([[
+    {
+      name: "person",
+      type: "object",
+      children: [
+        { name: "Ravi", type: "String" },
+        {
+          name: "age",
+          type: "Number",
+        },
+      ],
+    },
+    {
+      name: "Rahul",
+    },
+  ]]);
 
   // Handler function to add a new field to the list
   const handleAddField = () => {
