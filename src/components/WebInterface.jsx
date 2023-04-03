@@ -55,6 +55,7 @@ const WebInterface = () => {
           <FieldComponent
             key={index}
             index={index}
+            field={field}
             handleDeleteField={handleDeleteField}
           />
         ))
