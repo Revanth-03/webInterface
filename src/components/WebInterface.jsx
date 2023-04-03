@@ -19,7 +19,12 @@ const WebInterface = () => {
     },
     {
       name: "Rahul",
+      type:"string"
     },
+    {
+      name:"Revanth",
+      type:"object"
+    }
   ]]);
 
   // Handler function to add a new field to the list
