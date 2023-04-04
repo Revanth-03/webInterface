@@ -39,7 +39,7 @@ npm install                                                               # Inst
 ```
 
 ## How to use
-To use the web interface, run `npm start` to start the development server, and navigate to `http://localhost:3000` in your browser.
+To use the web interface, after installing run `npm start` to start the  server, and navigate to `http://localhost:3000` in your browser.
 
 From there, you can add fields by clicking the "+" button and choose the field type and name. You can also delete fields by clicking the "X" button.
 
